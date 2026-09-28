@@ -7,7 +7,7 @@ FROM drupalci/php-8.5-ubuntu-apache:production
 # browsers below no longer match and every CI job re-downloads them.
 #
 # Keep in sync with the consuming project's lockfile, and bump both together.
-ARG PLAYWRIGHT_VERSION=1.62.0
+ARG PLAYWRIGHT_VERSION=1.63.0
 
 RUN curl -fsSL https://dl.yarnpkg.com/debian/pubkey.gpg -o /usr/share/keyrings/yarn-keyring.asc \
     && echo "deb [signed-by=/usr/share/keyrings/yarn-keyring.asc] https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
